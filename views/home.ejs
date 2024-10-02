@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Home page</h1>
+
+    <table  border="1">
+        <tr >
+            <th style="width: 300px;" >ShortURL</th>
+            <th>RedirectURL</th>
+        </tr>
+        <% result.forEach((e) =>{ %>
+            <tr>
+                <td ><%= e.shortURL %></td>
+                <td><%= e.redirectURL %></td>
+            </tr>
+        <% }) %>
+    </table>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <h1>your created short URL</h1>
+
+        <table border="1">
+            <tr>
+                <th  style="width: 400px">Original URL</th>
+                <th  style="width: 200px">Short URL</th>
+            </tr>
+            
+                <% data.forEach((e)=>{ %>
+                    <tr>
+                        <td><%= e.redirectURL %></td>
+                        <td   style="text-align: center;"><%= e.shortURL %></td>
+                    </tr>
+                <% }) %>
+            
+        </table>
+    </head>
+    <body>
+        
+    </body>
+    </html>
+</body>
+</html>
