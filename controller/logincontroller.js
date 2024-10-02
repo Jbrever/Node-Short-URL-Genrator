@@ -4,7 +4,7 @@ const {setuserid} = require('../service/auth');
 
 async function login(req,resp){
     try{
-        resp.status(200).render("login");
+        resp.status(200).render("index");
     }catch(err){
       console.log("redirect login form error " ,err);
     }   
